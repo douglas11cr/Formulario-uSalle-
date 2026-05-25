@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Gestión Comercial</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="navbar">
+      <div class="logo">Gestión Comercial</div>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#dashboard">Panel</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#inventario">Inventario</a></li>
+        <li><a href="#ventas">Ventas</a></li>
+        <li><a href="#reportes">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Sistema de Gestión para una Comercializadora de Productos</h1>
+        <p>
+          Prototipo web diseñado para mejorar el control de inventario, productos
+          y ventas de una empresa comercializadora, aplicando principios de
+          Interacción Humano Computador.
+        </p>
+        <div class="botones">
+          <a href="#dashboard" class="btn primario">Ingresar al sistema</a>
+          <a href="#productos" class="btn secundario">Ver productos</a>
+        </div>
+      </div>
+
+      <div class="login-card">
+        <h2>Inicio de sesión</h2>
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="usuario@empresa.com" />
+        <label>Contraseña</label>
+        <input type="password" placeholder="********" />
+        <button onclick="mostrarMensaje('Ingreso simulado correctamente')">Ingresar</button>
+        <p class="nota">Acceso de prueba para visualizar el prototipo.</p>
+      </div>
+    </section>
+
+    <section id="dashboard" class="seccion">
+      <h2>Panel principal</h2>
+      <p class="descripcion">
+        Resumen general de la actividad comercial y del estado actual del inventario.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Productos registrados</h3>
+          <p>120</p>
+        </article>
+        <article class="card">
+          <h3>Ventas del día</h3>
+          <p>25</p>
+        </article>
+        <article class="card alerta">
+          <h3>Bajo stock</h3>
+          <p>8</p>
+        </article>
+        <article class="card">
+          <h3>Total ventas</h3>
+          <p>$2.500.000</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="productos" class="seccion fondo">
+      <div class="titulo-flex">
+        <div>
+          <h2>Gestión de productos</h2>
+          <p class="descripcion">
+            Consulta, registro y organización de los productos disponibles en la empresa.
+          </p>
+        </div>
+        <button class="btn primario" onclick="mostrarMensaje('Formulario de producto simulado')">Agregar producto</button>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Producto</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+              <th>Existencia</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="tablaProductos"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="inventario" class="seccion">
+      <h2>Inventario</h2>
+      <p class="descripcion">
+        En esta sección se visualiza la cantidad disponible de cada producto y se
+        identifican los productos que requieren reposición.
+      </p>
+
+      <div class="inventario-grid">
+        <div class="bloque">
+          <h3>Productos con inventario estable</h3>
+          <p>La mayoría de productos cuentan con existencias suficientes para continuar con la operación comercial.</p>
+        </div>
+        <div class="bloque advertencia">
+          <h3>Alerta de bajo stock</h3>
+          <p>El producto “Jabón líquido” presenta baja disponibilidad. Se recomienda realizar reposición.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ventas" class="seccion fondo">
+      <h2>Registro de ventas</h2>
+      <p class="descripcion">
+        Formulario básico para registrar una venta y actualizar el inventario de manera organizada.
+      </p>
+
+      <form class="formulario" onsubmit="registrarVenta(event)">
+        <div>
+          <label>Producto</label>
+          <select id="productoVenta">
+            <option value="Arroz 500g">Arroz 500g</option>
+            <option value="Aceite 1L">Aceite 1L</option>
+            <option value="Jabón líquido">Jabón líquido</option>
+            <option value="Galletas">Galletas</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Cantidad</label>
+          <input id="cantidadVenta" type="number" min="1" value="1" />
+        </div>
+
+        <div>
+          <label>Precio unitario</label>
+          <input id="precioVenta" type="number" min="0" value="3500" />
+        </div>
+
+        <button class="btn primario" type="submit">Registrar venta</button>
+      </form>
+
+      <div id="resultadoVenta" class="resultado"></div>
+    </section>
+
+    <section id="reportes" class="seccion">
+      <h2>Reportes básicos</h2>
+      <p class="descripcion">
+        Los reportes permiten analizar el comportamiento de las ventas y apoyar la toma de decisiones.
+      </p>
+
+      <div class="reportes">
+        <div>
+          <h3>Producto más vendido</h3>
+          <p>Arroz 500g</p>
+        </div>
+        <div>
+          <h3>Productos agotados</h3>
+          <p>2</p>
+        </div>
+        <div>
+          <h3>Mayor rotación</h3>
+          <p>Alimentos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion experiencia">
+      <h2>Sistematización de la experiencia</h2>
+      <p>
+        Durante esta fase se desarrolló un prototipo web que representa visualmente la solución propuesta
+        para una empresa comercializadora de productos. El proceso permitió aplicar conceptos de
+        Interacción Humano Computador, Diseño Centrado en el Usuario, usabilidad y organización visual
+        de la información.
+      </p>
+      <p>
+        El prototipo permite validar la idea antes de construir el sistema completo, identificando posibles
+        mejoras en la navegación, claridad de los módulos y facilidad de uso para los empleados.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto de Interacción Humano Computador - Douglas Cruz</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
