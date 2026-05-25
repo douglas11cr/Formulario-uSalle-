@@ -1,0 +1,17 @@
+TEXTO PARA PUBLICAR EN LA COMUNIDAD
+
+Cordial saludo.
+
+Comparto la tercera fase del proyecto final titulado Sistema de Gestión para una Comercializadora de Productos.
+
+En esta fase se desarrolló un prototipo web enfocado en la gestión de inventario y ventas de una empresa comercializadora. El prototipo incluye secciones como inicio de sesión, panel principal, gestión de productos, inventario, ventas y reportes básicos.
+
+El diseño fue realizado teniendo en cuenta principios de Interacción Humano Computador, especialmente la usabilidad, la claridad visual y la facilidad de navegación para el usuario.
+
+Enlace del prototipo en GitHub Pages:
+[PEGAR AQUÍ EL ENLACE]
+
+Enlace del video en YouTube:
+[PEGAR AQUÍ EL ENLACE]
+
+Muchas gracias.

@@ -1,0 +1,15 @@
+COMENTARIOS PARA REVISAR DOS PROYECTOS DE COMPAÑEROS
+
+Comentario para el grupo 1:
+
+Considero que el proyecto está bien planteado y presenta una idea clara. Se evidencia que buscaron solucionar una necesidad específica mediante una interfaz organizada. Como recomendación, les sugeriría mejorar un poco la navegación entre las pantallas, agregando botones o menús más visibles para que el usuario pueda desplazarse con mayor facilidad.
+
+También sería importante incluir mensajes de confirmación o alertas cuando el usuario realice una acción, por ejemplo, al guardar información o eliminar un registro. Esto ayudaría a mejorar la experiencia de usuario y reducir posibles errores.
+
+Comentario para el grupo 2:
+
+El proyecto presenta una propuesta interesante y el prototipo permite comprender la función principal del sistema. Se nota el esfuerzo en el diseño visual y en la organización de la información.
+
+Como recomendación, les sugeriría aplicar más principios de usabilidad, especialmente en la claridad de los textos, el tamaño de los botones y la distribución de los elementos en pantalla. Esto es importante porque una interfaz debe ser fácil de entender para cualquier usuario, incluso si la utiliza por primera vez.
+
+También podrían fortalecer la explicación del video, mostrando de manera más ordenada el problema, la solución propuesta y las funcionalidades principales del prototipo.

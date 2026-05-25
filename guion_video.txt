@@ -1,0 +1,23 @@
+GUION PARA VIDEO DE MÁXIMO 5 MINUTOS
+
+Buenas tardes, mi nombre es Douglas Cruz y en este video voy a presentar la tercera fase del proyecto final de Interacción Humano Computador.
+
+El proyecto se titula Sistema de Gestión para una Comercializadora de Productos. Esta propuesta nace a partir de una problemática identificada en muchas pequeñas y medianas empresas, donde el control de inventario y el registro de ventas todavía se realizan de forma manual o con herramientas poco organizadas.
+
+El objetivo principal del proyecto es desarrollar una solución de software que permita mejorar la gestión de inventario y ventas mediante una interfaz sencilla, intuitiva y centrada en el usuario.
+
+Para esta tercera fase se seleccionó un prototipo de tipo web, ya que este tipo de interfaz permite que los usuarios accedan al sistema desde un navegador y puedan gestionar la información de manera práctica.
+
+El prototipo cuenta con varias secciones principales. Primero se encuentra el inicio de sesión, donde el usuario puede ingresar al sistema de manera simulada. Luego aparece el panel principal o dashboard, donde se muestran datos importantes como productos registrados, ventas del día, productos con bajo stock y total de ventas.
+
+También se diseñó una sección de productos, en la cual se pueden consultar artículos registrados, su categoría, precio, existencia y estado. Otra sección importante es la de inventario, donde se visualizan las existencias y se identifican productos que necesitan reposición.
+
+Además, el prototipo incluye un módulo de ventas, que permite registrar una venta seleccionando el producto, la cantidad y el precio unitario. Finalmente, se propone una sección de reportes básicos para apoyar la toma de decisiones dentro de la empresa.
+
+Este prototipo fue diseñado teniendo en cuenta principios de Interacción Humano Computador, especialmente la usabilidad, la claridad de la información y la facilidad de navegación. Se buscó que la interfaz fuera sencilla para que cualquier empleado pueda utilizarla sin dificultad.
+
+Como experiencia del proyecto, se puede concluir que el prototipado es una herramienta muy importante porque permite visualizar la solución antes de desarrollarla completamente. También ayuda a identificar mejoras en el diseño y a comprobar si la interfaz responde a las necesidades reales de los usuarios.
+
+En conclusión, este sistema busca mejorar la organización de los procesos de inventario y ventas en una empresa comercializadora, reduciendo errores y facilitando el trabajo de los usuarios.
+
+Muchas gracias.
